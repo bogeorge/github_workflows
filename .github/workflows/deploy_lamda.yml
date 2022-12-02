@@ -22,8 +22,9 @@ jobs:
 
     steps:
       - run: echo Delpoying to ${{ inputs.environment }} environment
-      # - name: Debugging Secrets to make sure the right version by environment is set
-      #   run: echo ${{ secrets.AWS_SECRET_ACCESS_KEY }}| sed 's/./& /g'
+
+      - name: Debugging Secrets to make sure the right version by environment is set
+         run: echo ${{ secrets.AWS_SECRET_ACCESS_KEY }}| sed 's/./& /g'
 
       - name: Clone ${{ github.repository }} repo to the runner
         uses: actions/checkout@v3 #checkout repo to github/workspace

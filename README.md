@@ -1,7 +1,2 @@
-# CI/CD Overview
+# Shared Workflow Overview
 
-## Feature Development
-
-## Beta Branch
-
-## Main Branch
